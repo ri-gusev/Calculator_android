@@ -109,7 +109,7 @@
     <Button
         android:id="@+id/buttonZero"
         android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_height="70dp"
         android:layout_marginStart="4dp"
         android:layout_marginBottom="8dp"
         android:text="@string/_0"
@@ -121,7 +121,7 @@
     <Button
         android:id="@+id/buttonDelete"
         android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_height="70dp"
         android:layout_marginStart="4dp"
         android:layout_marginBottom="8dp"
         android:text="@string/delete"
@@ -133,20 +133,19 @@
     <Button
         android:id="@+id/buttonDeleteAll"
         android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_height="70dp"
         android:layout_marginStart="4dp"
         android:layout_marginBottom="8dp"
         android:text="@string/deleteAll"
         android:textSize="20sp"
         app:cornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/buttonDelete" />
 
     <Button
         android:id="@+id/buttonPlus"
         android:layout_width="75dp"
-        android:layout_height="72dp"
+        android:layout_height="70dp"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="8dp"
@@ -155,22 +154,21 @@
         app:cornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/buttonDeleteAll" />
 
     <Button
         android:id="@+id/buttonMinus"
         android:layout_width="75dp"
-        android:layout_height="72dp"
+        android:layout_height="70dp"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="0dp"
         android:text="@string/minus"
         android:textSize="20sp"
         app:cornerRadius="25dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonPlus"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toEndOf="@+id/buttonThree" />
 
     <Button
@@ -179,29 +177,30 @@
         android:layout_height="72dp"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="0dp"
         android:text="@string/multiple"
         android:textSize="20sp"
         app:cornerRadius="25dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonMinus"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/buttonSix" />
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toEndOf="@+id/buttonSix"
+        app:layout_constraintTop_toBottomOf="@id/buttonDivider" />
 
     <Button
-        android:id="@+id/buttonDevider"
+        android:id="@+id/buttonDivider"
         android:layout_width="75dp"
         android:layout_height="70dp"
         android:layout_marginStart="4dp"
         android:layout_marginEnd="4dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/devision"
+        android:layout_marginBottom="0dp"
+        android:text="@string/divide"
         android:textSize="20sp"
         app:cornerRadius="25dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonMultiple"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/buttonNine" />
+        app:layout_constraintStart_toEndOf="@+id/buttonNine"
+        app:layout_constraintTop_toBottomOf="@id/divider789" />
 
     <View
         android:id="@+id/divider789"
@@ -213,11 +212,11 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textViewJustZero"
+        android:id="@+id/textViewInputTask"
         android:layout_width="wrap_content"
         android:layout_height="38dp"
         android:layout_marginTop="132dp"
-        android:text="@string/_0"
+        tools:text="@string/_0"
         android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/dividerInput"
         app:layout_constraintEnd_toEndOf="parent"
@@ -248,7 +247,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewJustZero"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInputTask"
         app:layout_constraintVertical_bias="0.899" />
 
     <TextView
@@ -257,7 +256,7 @@
         android:layout_height="wrap_content"
         android:text="@string/input"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/textViewJustZero"
+        app:layout_constraintBottom_toTopOf="@+id/textViewInputTask"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -274,15 +273,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dividerInput"
         app:layout_constraintVertical_bias="0.358" />
-
-    <TextView
-        android:id="@+id/textViewEquals"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/equals"
-        android:textSize="28sp"
-        app:layout_constraintBottom_toTopOf="@+id/dividerResult"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonCheckAnswer"

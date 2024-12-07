@@ -3,7 +3,6 @@
     <string name="_1">1</string>
     <string name="_2">2</string>
     <string name="_0">0</string>
-    <string name="delete"><![CDATA[<—]]></string>
     <string name="deleteAll">C</string>
     <string name="_3">3</string>
     <string name="_4">4</string>
@@ -14,10 +13,11 @@
     <string name="_9">9</string>
     <string name="plus">+</string>
     <string name="minus">-</string>
-    <string name="multiple">*</string>
-    <string name="devision">/</string>
     <string name="input">Input:</string>
     <string name="the_answer_is">The answer is:</string>
     <string name="equals">=</string>
     <string name="check">Check</string>
+    <string name="delete"><![CDATA[<-]]></string>
+    <string name="multiple">×</string>
+    <string name="divide">÷</string>
 </resources>
