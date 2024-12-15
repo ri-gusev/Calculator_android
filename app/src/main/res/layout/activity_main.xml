@@ -216,14 +216,25 @@
         android:layout_width="wrap_content"
         android:layout_height="38dp"
         android:layout_marginTop="132dp"
-        tools:text="@string/_0"
         android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/dividerInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="@string/_0" />
+
+    <TextView
+        android:id="@+id/textViewAnswerOutPut"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/dividerResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:text="answer here" />
 
     <View
         android:id="@+id/dividerInput"
@@ -271,8 +282,7 @@
         app:layout_constraintBottom_toTopOf="@+id/dividerResult"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dividerInput"
-        app:layout_constraintVertical_bias="0.358" />
+        app:layout_constraintTop_toBottomOf="@+id/dividerInput" />
 
     <Button
         android:id="@+id/buttonCheckAnswer"
